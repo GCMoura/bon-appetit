@@ -1,0 +1,16 @@
+[
+  {
+    "title": "receita 1",
+    "ingredientsArray": [
+      "banana, farinha, oleo, fuba"
+    ],
+    "howToMake": "bata tudo no liquidificador"
+  },
+  {
+    "title": "receita 2",
+    "ingredientsArray": [
+      "chocolate, farinha, oleo, fermento"
+    ],
+    "howToMake": "bata tudo na batedeira"
+  }
+]
