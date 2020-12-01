@@ -21,12 +21,11 @@ function Landing() {
     let recipesArray = []
     
     for(let i in recipesReturned){
-      for(let j in recipesReturned[i].ingredientsArray){
-        if(recipesReturned[i].ingredientsArray[j] === ingredient){
-          recipesArray.push(recipesReturned[i])
-        }
+      if(recipesReturned[i].ingredients.hasOwnProperty(ingredient)){
+        recipesArray.push(recipesReturned[i])
       }
     }
+
     history.push({
       pathname: '/recipes',
       state: { detail: recipesArray }

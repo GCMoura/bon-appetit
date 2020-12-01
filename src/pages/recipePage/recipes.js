@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
-import Recipe from '../../component/Recipe/recipe'
+import Title from '../../component/Recipe/title'
+import Ingredient from '../../component/Recipe/ingredient'
+import Direction from '../../component/Recipe/direction'
 
 function Recipes() {
  
@@ -9,6 +11,18 @@ function Recipes() {
 
   const recipes = history.location.state.detail
 
+  var title
+  var direction
+  var ingredients = []
+
+  for(let i in recipes){
+    title = recipes[i].title
+    direction = recipes[i].direction
+    ingredients.push(recipes[i].ingredients)
+  }
+
+  console.log(ingredients)
+  
   return (
     <div>
       <h1>Recipes Page</h1>
@@ -20,15 +34,17 @@ function Recipes() {
         To Register
       </Link>
 
-      { recipes.map((recipe) => {
-        return <Recipe 
-          key={recipe.id} 
-          title={recipe.title} 
-          ingredients={recipe.ingredientsArray} 
-          directions={recipe.howToMake} />
-      }) }
-      
-    </div>
+      <Title 
+        title={title}
+      />
+      <Ingredient 
+        ingredients={ingredients}
+      />
+      <Direction 
+        direction={direction}
+      />
+            
+    </div> 
   )
 }
 

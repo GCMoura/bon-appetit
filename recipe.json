@@ -3,18 +3,14 @@
     {
       "id": 1,
       "title": "receita 1",
-      "ingredientsArray": [
-        "banana", "farinha", "oleo", "fuba"
-      ],
-      "howToMake": "bata tudo no liquidificador"
-    },
-    {
-      "id": 2,
-      "title": "receita 2",
-      "ingredientsArray": [
-        "chocolate", "farinha", "oleo", "fermento"
-      ],
-      "howToMake": "bata tudo na batedeira"
+      "ingredients": [
+        { "description": "banana", "quant": "5 unidades"},
+        { "description": "farinha", "quant": "500 gramas"},
+        { "description": "óleo", "quant": "100 ml"},
+        { "description": "fubá", "quant": "2 xícaras"}
+
+      ],        
+      "direction": "bata tudo no liquidificador"
     }
   ]
 }
