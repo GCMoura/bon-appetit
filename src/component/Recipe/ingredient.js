@@ -1,29 +1,35 @@
 import React from 'react'
 
+import './style.css'
+
 function Ingredient({ ingredients }){
 
   var ingredient = []
   var mergeIngredient
 
-  Object.values(ingredients).map((values) => {
-    Object.entries(values).map((key) => {
-      console.log(key.length)
-      mergeIngredient = ''
-      for(let i = 0; i < key.length; i++){
-        mergeIngredient += `${key[i]} `
-      }
-      ingredient.push(mergeIngredient)
-    })
-  }) 
-  console.log(ingredient)
+  for(let i in ingredients){
+    mergeIngredient = `${ingredients[i].description} - ${ingredients[i].quant}`
+    ingredient.push(mergeIngredient)
+  }
 
   return (
     <div>
+      <table border='0' cellSpacing='0' className="table-ingredient">
+        <tbody>
       {
         ingredient.map((value) => {
-          return <h1>{value}</h1>
+          let split = value.split('-')
+          return (
+            <tr key={value}>
+              <td width="200">{split[0]}</td>
+              <td>-</td>
+              <td width="150">{split[1]}</td>
+            </tr>
+          )
         })
       }
+      </tbody>
+      </table> 
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 
-function TextArea({ name, label, ...rest }) {
+import './style.css'
+
+function TextArea({ name, ...rest }) {
   return (
-    <div>
-      <label htmlFor={ name }>{ label } </label>
+    <div className="text-area-div">
       <textarea  id={ name } { ...rest } />
     </div>
   )

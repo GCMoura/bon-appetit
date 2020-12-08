@@ -1,9 +1,11 @@
 import React from 'react'
 
+import './style.css'
+
 function Direction({ direction }) {
   return(
-    <div>
-      <h1>{direction}</h1>
+    <div className='recipe-direction'>
+      <p>{direction}</p>
     </div>
   )
 }

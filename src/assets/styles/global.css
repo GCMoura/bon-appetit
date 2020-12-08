@@ -10,6 +10,15 @@ html, body, #root {
 
 :root{
   --color-background: #f3e9e9;
+  --color-header: #840284;
+  --color-footer:  #840284;
+  --color-font: #FFFFFF;
+  --color-recipe-button:  #215992;
+  --color-recipe-button-dark:  #0b132b;
+  --color-register-button: #E10832;
+  --color-register-button-dark: #920D27;
+  --color-add-ingredient-button: #bea61e;
+  --color-add-ingredient-button-light: #ebcc1f;
 
   font-size: 60%;
 }

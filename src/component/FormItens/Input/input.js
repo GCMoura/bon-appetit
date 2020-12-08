@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Input({ name, label, type, ...rest }){
+import './style.css'
+
+function Input({ name, type, ...rest }){
   return (
-    <div>
-      <label htmlFor={ name }>{ label } </label>
+    <div className="input-div">
       <input type={ type } className={ name } { ...rest }/>
     </div>
   )

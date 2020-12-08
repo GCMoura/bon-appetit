@@ -1,50 +1,62 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
+import PageDefault from '../../component/PageDefault/pageDefault'
 import Title from '../../component/Recipe/title'
+import Image from '../../component/Recipe/image'
 import Ingredient from '../../component/Recipe/ingredient'
 import Direction from '../../component/Recipe/direction'
+
+import Home from '../../assets/images/home.svg'
+import Register from '../../assets/images/register.svg'
+
+import './style.css'
 
 function Recipes() {
  
   const history = useHistory()
 
   const recipes = history.location.state.detail
-
-  var title
-  var direction
-  var ingredients = []
-
-  for(let i in recipes){
-    title = recipes[i].title
-    direction = recipes[i].direction
-    ingredients.push(recipes[i].ingredients)
-  }
-
-  console.log(ingredients)
   
   return (
-    <div>
-      <h1>Recipes Page</h1>
-      <Link to='/'>
-        Return to Landing
-      </Link>
-      <br></br>
-      <Link to='/register'>
-        To Register
-      </Link>
+    <PageDefault title="Minhas Receitas">
+    
+      <div className="return-icon">
+        <Link to='/'>
+          <img src={ Home } alt="Return to Home"/>
+          Home
+        </Link>
+      </div>
+      <div className="register-icon">
+        <Link to='/register'>
+          <img src={ Register } alt="Go to register"/>
+          Register
+        </Link>
+      </div>
 
-      <Title 
-        title={title}
-      />
-      <Ingredient 
-        ingredients={ingredients}
-      />
-      <Direction 
-        direction={direction}
-      />
-            
-    </div> 
+        <div className='recipe-wrap'>
+          { recipes.map((recipe) => {
+              return(
+                <div key={recipe.id} className="recipe-container">
+                  <Title 
+                    title={recipe.title}
+                  />
+                  <Image 
+                    url={recipe.image}
+                  />
+                  <p className="label-ingredient">Ingredientes:</p>
+                  <Ingredient 
+                    ingredients={recipe.ingredients}
+                  />
+                  <p className="label-ingredient">Modo de preparo:</p>
+                  <Direction 
+                    direction={recipe.direction}
+                  />
+                </div>
+              )
+            })}
+        </div>
+    </PageDefault>
   )
 }
 

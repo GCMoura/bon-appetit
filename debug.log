@@ -3,3 +3,9 @@
 [1127/211641.264:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Gabriel\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\ac087348-654f-437f-beaf-3de4242eca7f: O sistema não pode encontrar o caminho especificado. (0x3)
 [1130/125039.859:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [1201/131921.979:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1201/212246.462:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1201/212246.729:ERROR:exception_snapshot_win.cc(99)] thread ID 2988 not found in process
+[1201/212246.487:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1201/212246.739:ERROR:exception_snapshot_win.cc(99)] thread ID 14600 not found in process
+[1201/212246.493:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1201/212246.739:ERROR:exception_snapshot_win.cc(99)] thread ID 4312 not found in process

@@ -1,0 +1,22 @@
+.input-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-div input{
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+@media (min-width: 700px){
+  .input-div{
+    width: 100%;
+  }
+}

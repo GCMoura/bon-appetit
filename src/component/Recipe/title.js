@@ -1,10 +1,12 @@
 import React from 'react'
 
+import './style.css'
+
 function Title({ title }) {
 
   return(
-    <div>
-      <h1>{ title }</h1>
+    <div className="recipe-title">
+      <p>{ title }</p>
     </div>
   ) 
 }
