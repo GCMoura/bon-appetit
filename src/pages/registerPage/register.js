@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
+import Alert from '../../utils/buildAlert'
 import TextArea from '../../component/FormItens/TextArea/textArea'
 import PageDefault from '../../component/PageDefault/pageDefault'
 import Home from '../../assets/images/home.svg'
@@ -41,20 +42,27 @@ function Register() {
 
     let newRecipe = {id, title, image, ingredients, direction}
 
-    fetch(`${URL_RECIPES}`, {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify(newRecipe)
-    })
+    if(title === '' || image === '' || ingredients === '' || direction === ''){
+      Alert("Preencha todos os campos", '#E10832' )
+    } else {
 
-    let recipeCreated = [newRecipe]
+      Alert("Receita cadastrada com suceso",  '#01d401')
 
-    history.push({
-      pathname: '/recipes',
-      state: { detail: recipeCreated }
-    })
+      fetch(`${URL_RECIPES}`, {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json',
+        },
+        body: JSON.stringify(newRecipe)
+      })
+  
+      let recipeCreated = [newRecipe]
+  
+      history.push({
+        pathname: '/recipes',
+        state: { detail: recipeCreated }
+      })
+    }
   }
 
   useEffect(() => {

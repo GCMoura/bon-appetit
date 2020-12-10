@@ -14,15 +14,25 @@
   font-size: 2.2rem;
   text-align: center;
   margin: 5px 0px;
-  width: 80%;
+  width: 95%;
+}
+.table-ingredient #ingredient{
+  width: 200px;
+}
+.table-ingredient td{
+  padding-bottom: 10px;
+}
+.table-ingredient #quant{
+  width: 200px;
 }
 
 .recipe-direction{
   width: 90%;
   padding: 5px;
-  font-size: 2.2rem;
+  font-size: 2rem;
   border: 2px solid #444;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 700px){
@@ -30,4 +40,15 @@
     width: 150px;
     height: 130px;
   }
+  .recipe-direction{
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  .table-ingredient #ingredient{
+    width: 400px;
+  }
+  .table-ingredient #quant{
+    width: 300px;
+  }
+
 }

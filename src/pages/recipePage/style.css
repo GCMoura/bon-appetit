@@ -11,11 +11,14 @@
 .register-icon a{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 .recipe-page{
   height: calc(100vh - 120px);
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .recipe-container{
@@ -33,7 +36,7 @@
 
 @media (min-width: 700px){
   .register-icon{
-    right: 500px;
+    right: 400px;
   }
   .recipe-page{
     width: 900px;

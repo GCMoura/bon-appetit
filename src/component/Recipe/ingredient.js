@@ -22,9 +22,9 @@ function Ingredient({ ingredients }){
           let ingredientForResponse = split[0][0].toUpperCase() + split[0].slice(1)
           return (
             <tr key={value}>
-              <td width="200">{ingredientForResponse}</td>
+              <td id="ingredient" >{ingredientForResponse}</td>
               <td>-</td>
-              <td width="150">{split[1]}</td>
+              <td id="quant" >{split[1]}</td>
             </tr>
           )
         })

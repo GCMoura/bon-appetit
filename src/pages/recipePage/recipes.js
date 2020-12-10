@@ -34,7 +34,7 @@ function Recipes() {
       <div className="register-icon">
         <Link to='/register'>
           <img src={ Register } alt="Go to register"/>
-          Register
+          Cadastrar
         </Link>
       </div>
 

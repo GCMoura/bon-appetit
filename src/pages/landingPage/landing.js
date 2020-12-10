@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import config from '../../config/index'
 
+import Alert from '../../utils/buildAlert'
 import Input from '../../component/FormItens/Input/input'
 import PageDefault from '../../component/PageDefault/pageDefault'
 
@@ -22,7 +23,6 @@ function Landing() {
     const serverResponse = await fetch(`${URL_RECIPES}`)
 
     const recipesReturned =  await serverResponse.json()
-
     let recipesArray = []
     
     for(let i in recipesReturned){
@@ -33,28 +33,31 @@ function Landing() {
       }
     }
 
-    history.push({
-      pathname: '/recipes',
-      state: { detail: recipesArray }
-    })
+    if(recipesArray.length === 0){
+      Alert("Não há receitas com esse ingrediente.", '#E10832')
+    } else {
+      history.push({
+        pathname: '/recipes',
+        state: { detail: recipesArray }
+      })
+    }
   }  
 
   function handleSubmit(event) {
     event.preventDefault()
 
     if(ingredient === ""){
-      
+      Alert("Digite um ingrediente", '#E10832')
     } else {
       getAllRecipesByIngredient(ingredient)
     }
   }
 
   return (
-    <PageDefault title="Meu Doce">
+    <PageDefault title="Bon Appetit">
     
       <img src={ landingImage } alt="Donut-Guy" id="logo"/>
       <div className="form-div">
-        <form onSubmit={handleSubmit}>
           <Input
             type="text" 
             name="ingredient"
@@ -63,7 +66,7 @@ function Landing() {
             placeholder="Digite o ingrediente"
             />
             <div className="button-div">
-              <button type="submit" id="recipe-button">
+              <button id="recipe-button" onClick={handleSubmit}>
                 <i className="fas fa-search"></i>
                 Pesquisar receita
               </button>
@@ -74,7 +77,6 @@ function Landing() {
                 </Link>
               </button>
             </div>
-        </form>
       </div>
       <footer>
         <span>
