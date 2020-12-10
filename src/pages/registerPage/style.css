@@ -63,6 +63,9 @@
 #add-ingredient-button{
   background: var(--color-add-ingredient-button-light);
 }
+#add-ingredient-button i{
+  margin-left: 20px;
+}
 #add-ingredient-button:hover,
 #add-ingredient-button:active{
   background: var(--color-add-ingredient-button);

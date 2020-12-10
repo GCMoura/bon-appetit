@@ -5,12 +5,14 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 120px);
+  margin-top: 40px;
 }
 
 @media (min-width: 700px){
   .container{
-    width: 100%;
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
   }
 }

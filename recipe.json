@@ -1,60 +1,72 @@
 {
   "recipes": [
     {
-      "id": 1,
-      "title": "receita 1",
-      "image": "https://www.sabornamesa.com.br/media/k2/items/cache/8835fed4de3847a26822c5cc338a0cab_L.jpg",
+      "id": "1607561471760",
+      "title": "Bolo de chocolate",
+      "image": "https://t2.rg.ltmcdn.com/pt/images/2/9/9/bolo_de_chocolate_cremoso_5992_orig.jpg",
       "ingredients": [
         {
-          "description": "banana",
-          "quant": "5 unidades"
+          "description": "ovos",
+          "quant": "4 unidades"
         },
         {
-          "description": "farinha",
-          "quant": "500 gramas"
+          "description": "açúcar",
+          "quant": "1 xícara de chá"
+        },
+        {
+          "description": "chocolate em pó",
+          "quant": "1 xícara de chá"
         },
         {
           "description": "óleo",
-          "quant": "100 ml"
+          "quant": "1 xícara de chá"
         },
         {
-          "description": "fubá",
-          "quant": "2 xícaras"
+          "description": "água",
+          "quant": "1 xícara de chá"
+        },
+        {
+          "description": "trigo",
+          "quant": "2 xícara de chá"
+        },
+        {
+          "description": "fermento",
+          "quant": "1 colher de sopa"
+        },
+        {
+          "description": "",
+          "quant": ""
         }
       ],
-      "direction": "bata tudo no liquidificador"
+      "direction": "Preaqueça o forno a 180 ºC (temperatura média). Unte com manteiga uma fôrma redonda com furo no meio, de 24 cm de diâmetro. Faça uma misturinha meio a meio de chocolate em pó e farinha; polvilhe a fôrma toda (assim o bolo não fica com aquela casquinha branca de farinha), chacoalhe e bata para retirar o excesso.\nNuma tigela, coloque a farinha, passando pela peneira. \nNuma tigela grande (ou na batedeira), coloque o açúcar e o chocolate em pó, passando por uma peneira. Numa tigela pequena, quebre um ovo de cada vez e junte ao açúcar - se um estiver estragado você não perde a receita. Adicione o óleo e misture bem com o batedor de arame até ficar liso. Se estiver usando a batedeira, comece batendo na velocidade baixa - para o chocolate não subir - e quando a massa estiver lisa, aumente e bata por mais alguns minutos. \nSe estiver usando a batedeira, diminua a velocidade e, aos poucos, vá adicionando a água e a farinha, alternadamente, batendo apenas para misturar. Por último, adicione o fermento. \nTransfira a massa para a fôrma preparada e leve ao forno para assar por cerca de 30 minutos. Para verificar, espete um palito, se sair limpo está pronto. Retire do forno e deixe esfriar por 15 minutos antes de desenformar. \nPara desenformar: coloque um prato de bolo sobre a fôrma e vire de uma só vez. Deixe o bolo esfriar completamente antes de cobrir com a ganache."
     },
     {
-      "id": "1607453382394",
-      "title": "Pudim",
-      "image": "",
+      "id": "1607561693198",
+      "title": "Brigadeiro",
+      "image": "https://s2.glbimg.com/eF2hRjb3yFDE-nwNIu-gLSkwfvI=/0x0:266x189/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2015/10/12/01_47_42_684_download.jpg",
       "ingredients": [
         {
-          "description": "Leite condensado",
+          "description": "leite condensado",
           "quant": "1 lata"
         },
         {
-          "description": "Leite vaca",
-          "quant": "350ml"
+          "description": "leite",
+          "quant": "1/2 medida da lata"
         },
         {
-          "description": "Ovo",
-          "quant": "6 unidades"
-        }
-      ],
-      "direction": "Bata tudo no liquidificador, unte uma forma com açúcar derretido e asse em banho maria por 30 minutos. Espere esfriar e desenforme. "
-    },
-    {
-      "id": "1607455356077",
-      "title": "Pudim",
-      "image": "data:image/jpeg;base64,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",
-      "ingredients": [
+          "description": "manteiga",
+          "quant": "1 colher de sopa"
+        },
         {
-          "description": "Leite condensado",
-          "quant": "1 lata"
+          "description": "chocolate em pó",
+          "quant": "3 colheres de sopa"
+        },
+        {
+          "description": "chocolate granulado",
+          "quant": "2 xícaras de chá"
         }
       ],
-      "direction": "bata tudo no liquidificador."
+      "direction": "Numa panela, misture o leite e o chocolate em pó. Leve ao fogo baixo e mexa bem, até dissolver o chocolate.Junte o leite condensado, a manteiga e, quando ferver, calcule 15 minutos cozinhando, sem parar de mexer, ou até aparecer o fundo da panela. Retire a panela do fogo e transfira o brigadeiro para o prato untado. Deixe esfriar. \n"
     }
   ]
 }

@@ -23,12 +23,18 @@
 #recipe-button{
   background: var(--color-recipe-button);
 }
+#register-button i{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#recipe-button i{
+  margin-right: 20px;
+}
 
 #recipe-button:hover,
 #recipe-button:active{
   background: var(--color-recipe-button-dark);
 }
-
 
 #register-button a {
   text-decoration: none;
@@ -67,6 +73,9 @@ footer{
 }
 footer span{ 
   display: flex;
+}
+footer a{
+  margin-left: 10px;
 }
 footer i{
   cursor: pointer;

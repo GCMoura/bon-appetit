@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 import TextArea from '../../component/FormItens/TextArea/textArea'
 import PageDefault from '../../component/PageDefault/pageDefault'
@@ -12,6 +12,8 @@ import config from '../../config/index'
 const URL_RECIPES = `${config}/recipes`
 
 function Register() {
+
+  const history = useHistory()
 
   const id = Date.now().toString()
 
@@ -31,7 +33,7 @@ function Register() {
   const handleChange = (event, index) => {
     const {name, value} = event.target;
     let values = [...ingredients];
-    values[index][name] = value;
+    values[index][name] = value.toLowerCase();
     setIngredients(state => [...values]);
   }
 
@@ -45,6 +47,13 @@ function Register() {
         'Content-type': 'application/json',
       },
       body: JSON.stringify(newRecipe)
+    })
+
+    let recipeCreated = [newRecipe]
+
+    history.push({
+      pathname: '/recipes',
+      state: { detail: recipeCreated }
     })
   }
 
@@ -109,7 +118,10 @@ function Register() {
                   </label>
                 </div>
               ))}
-              <button id="add-ingredient-button" onClick={handleAdd}>Adicionar ingrediente</button>
+              <button id="add-ingredient-button" onClick={handleAdd}>
+                Adicionar ingrediente
+                <i className="fas fa-plus-circle"></i>  
+              </button>
           </div>
           <label> Modo de preparo:
             <TextArea 
@@ -122,6 +134,7 @@ function Register() {
             <div>
               <button id="register-button" onClick={handleRecipe}>
                 Cadastrar receita
+                <i className="fas fa-clipboard-list"></i>
               </button>
             </div>
       </main>

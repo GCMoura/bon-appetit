@@ -13,13 +13,16 @@
   flex-direction: column;
   text-decoration: none;
 }
+.recipe-page{
+  height: calc(100vh - 120px);
+  margin-top: 40px;
+}
 
 .recipe-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .label-ingredient{
@@ -32,8 +35,10 @@
   .register-icon{
     right: 500px;
   }
-  .recipe-wrap{
+  .recipe-page{
+    width: 900px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }

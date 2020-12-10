@@ -10,7 +10,11 @@ import Direction from '../../component/Recipe/direction'
 import Home from '../../assets/images/home.svg'
 import Register from '../../assets/images/register.svg'
 
+import config from '../../config/index'
+
 import './style.css'
+
+const URL_RECIPES = `${config}/recipes`
 
 function Recipes() {
  
@@ -34,7 +38,7 @@ function Recipes() {
         </Link>
       </div>
 
-        <div className='recipe-wrap'>
+        <div className='recipe-page'>
           { recipes.map((recipe) => {
               return(
                 <div key={recipe.id} className="recipe-container">

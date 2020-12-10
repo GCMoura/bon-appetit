@@ -27,7 +27,7 @@ function Landing() {
     
     for(let i in recipesReturned){
       for(let j in recipesReturned[i].ingredients){
-        if(recipesReturned[i].ingredients[j].description === ingredient){
+        if(recipesReturned[i].ingredients[j].description === ingredient.toLowerCase()){
           recipesArray.push(recipesReturned[i])
         }
       }
@@ -42,8 +42,11 @@ function Landing() {
   function handleSubmit(event) {
     event.preventDefault()
 
-    getAllRecipesByIngredient(ingredient)
-
+    if(ingredient === ""){
+      
+    } else {
+      getAllRecipesByIngredient(ingredient)
+    }
   }
 
   return (
@@ -61,9 +64,11 @@ function Landing() {
             />
             <div className="button-div">
               <button type="submit" id="recipe-button">
+                <i className="fas fa-search"></i>
                 Pesquisar receita
               </button>
               <button id="register-button">
+                <i className="fas fa-clipboard-list"></i>
                 <Link to='/register'>
                     Cadastrar receita
                 </Link>
@@ -73,16 +78,11 @@ function Landing() {
       </div>
       <footer>
         <span>
-          Feito com 
-          &nbsp; <i className="fas fa-heart" id='heart'></i> &nbsp; 
-          por Gabriel Moura
-          &nbsp;  
-          <a href="linkedin.com/in/gabriel-moura-b45b90150/" target='_blank'>
+          Made by Gabriel Moura
+          <a href="linkedin.com/in/gabriel-moura-b45b90150/" target='_blank' rel="noreferrer">
             <i className="fab fa-linkedin" id='linkedin'></i> 
           </a>
-          &nbsp; 
-          &nbsp; 
-          <a href="https://github.com/GCMoura" target='_blank'>
+          <a href="https://github.com/GCMoura" target='_blank' rel="noreferrer">
             <i className="fab fa-github" id='github'> </i> 
           </a>
         </span>
