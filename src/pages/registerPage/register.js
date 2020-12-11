@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
 import Alert from '../../utils/buildAlert'
@@ -25,7 +25,7 @@ function Register() {
   const valueBase = {description: '', quant: ''};
   const [ingredients, setIngredients] = useState([{...valueBase}]);
 
-  const [ setRecipes ] = useState([])
+  // const [ recipes, setRecipes ] = useState([])
 
   const handleAdd = () => {
     setIngredients(state => [...state, {...valueBase}]);
@@ -65,15 +65,15 @@ function Register() {
     }
   }
 
-  useEffect(() => {
-    fetch(`${URL_RECIPES}`)
-      .then(async (response) => {
-        const recipesReturned =  await response.json()
-        setRecipes(
-          recipesReturned
-        )
-      })   
-  }, [])
+  // useEffect(() => {
+  //   fetch(`${URL_RECIPES}`)
+  //     .then(async (response) => {
+  //       const recipesReturned =  await response.json()
+  //       setRecipes(
+  //         recipesReturned
+  //       )
+  //     })   
+  // }, [])
 
   return (  
     <PageDefault title="Cadastrar Receita">
