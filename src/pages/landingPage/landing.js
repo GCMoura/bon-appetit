@@ -81,7 +81,7 @@ function Landing() {
       <footer>
         <span>
           Made by Gabriel Moura
-          <a href="linkedin.com/in/gabriel-moura-b45b90150/" target='_blank' rel="noreferrer">
+          <a href="https://linkedin.com/in/gabriel-moura-b45b90150/" target='_blank' rel="noreferrer">
             <i className="fab fa-linkedin" id='linkedin'></i> 
           </a>
           <a href="https://github.com/GCMoura" target='_blank' rel="noreferrer">
