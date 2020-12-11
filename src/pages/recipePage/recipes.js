@@ -10,11 +10,7 @@ import Direction from '../../component/Recipe/direction'
 import Home from '../../assets/images/home.svg'
 import Register from '../../assets/images/register.svg'
 
-import config from '../../config/index'
-
 import './style.css'
-
-const URL_RECIPES = `${config}/recipes`
 
 function Recipes() {
  
