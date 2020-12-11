@@ -1,6 +1,6 @@
 const USE_URL = window.location.hostname.includes('localhost')
 ? 'http://localhost:5000'
-: 'https://learningflix.herokuapp.com'
+: 'https://my-dessert.herokuapp.com'
 
 // const USE_URL = 'http://localhost:5000'
 
