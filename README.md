@@ -13,8 +13,9 @@ In this page the user can register all your recipes of dessert and search for on
   - [License](#license)
 
 ## Screenshots (mobile layout)
-![Screenshot-1](https://raw.githubusercontent.com/GCMoura/Rijksmuseum/master/screenshots/screenshot-1.png)
-![Screenshot-2](https://raw.githubusercontent.com/GCMoura/Rijksmuseum/master/screenshots/screenshot-2.png)
+![Screenshot-1](./src/assets/images/screenshots/screen-1.png)
+![Screenshot-2](./src/assets/images/screenshots/screen-2.png)
+![Screenshot-3](./src/assets/images/screenshots/screen-3.png)
 
 ## Getting Started
 This page was created using HTML5, CSS3 and Javascript with ReactJS for the front-end, and NodeJS for the back end. Beyond that, was used jason-server for create a repository for the recipes, therefore for visualizing this page access:
