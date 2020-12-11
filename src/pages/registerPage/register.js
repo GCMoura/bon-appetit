@@ -25,7 +25,7 @@ function Register() {
   const valueBase = {description: '', quant: ''};
   const [ingredients, setIngredients] = useState([{...valueBase}]);
 
-  const [ recipes, setRecipes ] = useState([])
+  const [ setRecipes ] = useState([])
 
   const handleAdd = () => {
     setIngredients(state => [...state, {...valueBase}]);
