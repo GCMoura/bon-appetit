@@ -4,7 +4,7 @@ In this page the user can register all your recipes of dessert and search for on
 ## Table of Contents
 - [Bon Appetit](#bon-appetit)
   - [Table of Contents](#table-of-contents)
-  - [Screenshots (mobile layout)](#screenshots-mobile-layout)
+  - [Screenshots (mobile and desktop layout)](#screenshots-mobile-and-desktop-layout)
   - [Getting Started](#getting-started)
   - [How it works](#how-it-works)
   - [Clone](#clone)
@@ -12,7 +12,7 @@ In this page the user can register all your recipes of dessert and search for on
   - [Contributing](#contributing)
   - [License](#license)
 
-## Screenshots (mobile layout)
+## Screenshots (mobile and desktop layout)
 ![Screenshot-1](./src/assets/images/screenshots/screen-1.png)
 ![Screenshot-2](./src/assets/images/screenshots/screen-2.png)
 ![Screenshot-3](./src/assets/images/screenshots/screen-3.png)
