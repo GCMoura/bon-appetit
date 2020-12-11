@@ -25,8 +25,6 @@ function Register() {
   const valueBase = {description: '', quant: ''};
   const [ingredients, setIngredients] = useState([{...valueBase}]);
 
-  // const [ recipes, setRecipes ] = useState([])
-
   const handleAdd = () => {
     setIngredients(state => [...state, {...valueBase}]);
   }
@@ -64,16 +62,6 @@ function Register() {
       })
     }
   }
-
-  // useEffect(() => {
-  //   fetch(`${URL_RECIPES}`)
-  //     .then(async (response) => {
-  //       const recipesReturned =  await response.json()
-  //       setRecipes(
-  //         recipesReturned
-  //       )
-  //     })   
-  // }, [])
 
   return (  
     <PageDefault title="Cadastrar Receita">
